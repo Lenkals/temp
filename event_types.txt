@@ -8,3 +8,18 @@ Modify Loan Event	Update terms of a previously reported loan.	FINRA Loan ID (T+1
 Cancel Loan Event	Cancel a specific event reported to SLATE.	FINRA Loan ID (T+1)	Canceling an incorrectly submitted loan term.
 Correction Loan Event	Fix errors in previously reported fields.	FINRA Loan ID (T+1)	Correcting a typo in the security identifier.
 Delete Loan Event	Remove a loan and all its associated events from SLATE.	FINRA Loan ID (T+1)	Deleting a loan that was fully terminated.
+
+
+Lifecycle Example
+Day 1: Submit a New Loan Event.
+Day 2: Submit a Modify Loan Event to update collateral type.
+Day 3: Submit a Correction Loan Event to fix an error in the lending fee.
+Day 4: Submit a Cancel Loan Event to cancel the modification from Day 2.
+Day 5: Submit a Delete Loan Event to remove the loan entirely.
+Would you like further clarification or help implementing logic for any specific event type?
+
+
+
+
+
+
