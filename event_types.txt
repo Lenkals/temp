@@ -1,0 +1,10 @@
+Event types
+
+Summary of Event Types and Use Cases
+Event Type	Purpose	Key ID	Use Case Example
+New Loan Event	Report a new loan.	Client Loan ID	Reporting a newly initiated securities loan.
+Pre-Existing Loan Modification Event	Introduce a pre-existing loan to SLATE due to a change.	Client Loan ID	Modifying a loan that existed before SLATE.
+Modify Loan Event	Update terms of a previously reported loan.	FINRA Loan ID (T+1)	Changing the collateral type of a loan.
+Cancel Loan Event	Cancel a specific event reported to SLATE.	FINRA Loan ID (T+1)	Canceling an incorrectly submitted loan term.
+Correction Loan Event	Fix errors in previously reported fields.	FINRA Loan ID (T+1)	Correcting a typo in the security identifier.
+Delete Loan Event	Remove a loan and all its associated events from SLATE.	FINRA Loan ID (T+1)	Deleting a loan that was fully terminated.
