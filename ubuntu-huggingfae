@@ -1,0 +1,21 @@
+pip install -U "huggingface_hub[cli]"
+huggingface-cli login --token <token> --add-to-git-credential 
+!python examples/3_train_policy.py \
+  --dataset_name birsapula/so101_test \
+  --policy diffusion \
+  --num_epochs 10 \
+  --batch_size 32
+  
+  export PYTHONPATH=/kaggle/working/lerobot:$PYTHONPATH
+  
+   !pip install pil
+   !pip install Pillow
+   !pip install jsonlines
+   !pip install torchvision
+   !pip install draccus
+   !pip install serial
+   !pip install deepdiff
+   !pip install safetensors
+   !pip install imageio
+   !pip install einops
+   !pip install diffusers
