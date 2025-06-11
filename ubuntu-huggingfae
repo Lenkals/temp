@@ -19,3 +19,7 @@ huggingface-cli login --token <token> --add-to-git-credential
    !pip install imageio
    !pip install einops
    !pip install diffusers
+
+
+
+python 3_train_policy.py   --dataset_name birsapula/so101_test   --policy diffusion   --num_epochs 10   --batch_size 32
